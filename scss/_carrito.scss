@@ -1,0 +1,15 @@
+
+
+.contenedor-carrito {
+    height: 100vh;
+
+    .seccion-carrito {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30vh;
+        align-items: center;
+    }
+}
+
+

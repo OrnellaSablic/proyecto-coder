@@ -1,0 +1,454 @@
+@import "variables";
+@import "generales";
+@import "historia";
+@import "tienda";
+@import "contacto";
+@import "carrito"; 
+@import "operaciones";
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "portada"
+        "tienda"
+        "banner-1"
+        "fotos"
+        "banner-2"
+        "musica"
+        "banner-3"
+        "carrusel"
+        "footer";
+    font-family: $tipografia;
+
+    #header {
+        grid-area: header;
+
+    }
+
+    #portada {
+        grid-area: portada;
+    }
+
+
+    #tienda {
+        grid-area: tienda;
+    }
+
+    #banner-1 {
+        grid-area: banner-1;
+
+    }
+
+    #fotos {
+        grid-area: fotos;
+    }
+
+    #banner-2 {
+        grid-area: banner-2;
+    }
+
+    #musica {
+        grid-area: musica;
+    }
+
+    #banner-3 {
+        grid-area: banner-3;
+    }
+
+    #carrusel {
+        grid-area: carrusel;
+    }
+
+
+    #footer {
+        grid-area: footer;
+    }
+
+}
+
+    /*-------portada--------*/
+
+    .portada {
+        position: relative;
+
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: aliceblue;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+    }
+
+    .contenedor-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+    
+    .logo {
+        width: 125px;
+        padding: 18px 0 8px;
+        margin-left: 25px;
+    }
+    
+
+
+/*-------sección banner--------*/
+
+.seccion-banner {
+    position: relative;
+
+    .banner-1,
+    .banner-2,
+    .banner-3 {
+        width: 100%;
+    }
+
+
+    a {
+        color: aliceblue;
+        border: 2.5px solid aliceblue;
+        padding: 3px;
+        font-family: $tipografia;
+        font-size: .8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        width: 38%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &:hover {
+            transition-duration: .7s;
+            border: 2.5px solid rgb(211, 39, 171);
+            background-color: transparent;
+            color: rgb(211, 39, 171);
+            ;
+        }
+    }   
+  
+}
+
+.texto-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0 0 10px 18px;
+
+    h2 {
+        font-size: 1.2rem;
+        color: aliceblue;
+    }
+       
+}
+
+
+.tienda,
+.fotos,
+.musica>h2 {
+    background-color: #2b0836;
+    color: aliceblue;
+    text-align: center;
+    padding: 18px;
+    font-size: 25px;
+}
+
+
+.owl-container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.texto-tienda {
+    width: 80%;
+    margin: 45px auto 0;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.carrusel {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-tarjetas {
+    margin: 20px 50px 20px;
+}
+
+/*-------sección tienda--------*/
+
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 6px 4px 29px -2px rgba(219, 216, 219, 1);
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+    button {
+        background-color: #6b3377;
+        border: 2px solid rgb(113, 13, 126);
+        color: rgb(247, 247, 247);
+        font-family: $tipografia;
+        border-radius: 20px;
+        padding: 7px 0;
+        margin-top: 8px;
+
+        &:hover {
+            transition-duration: .2s;
+            color: rgb(85, 10, 95);
+            background-color: rgb(247, 247, 247);
+            border: 2px solid rgb(113, 13, 126);
+            font-weight: 600;
+        }
+    }
+
+}
+
+
+.tarjeta-producto .titulo-album .titulo-prenda {
+    padding-top: 50px;
+}
+
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+    .btn-tienda {
+        @include btn-tienda (rgb(29, 29, 29), 3px solid rgb(13, 13, 13));
+        padding: 10px;
+        font-family: $tipografia;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+
+            &:hover {
+                transition: .2s;
+                color: rgb(214, 9, 163);
+                border: 3px solid rgb(214, 9, 163);
+            }
+    }
+
+}
+
+
+/*-------sección fotos--------*/
+
+.contenedor-fotos {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    img {
+        cursor: pointer;
+        transition: .7s;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: .7s;
+        }
+    }
+
+}
+
+
+/*-------sección música--------*/
+
+.contenedor-musica {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 30px auto;
+}
+
+
+@media (min-width: 480px) {
+
+    .portada h1 {
+        margin-left: 0;
+    }
+
+    .seccion-banner a {
+        width: 25%;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+
+    .portada h1 {
+        font-size: 2rem;
+    }
+
+    .texto-banner {
+        margin: 0 0 25px 45px;
+    }
+
+    .seccion-banner a {
+        padding: 5px;
+        width: 19%;
+    }
+
+    .carrusel {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+    #contenedor-historia {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "anios-setenta anios-setenta"
+            "anios-ochenta anios-ochenta"
+            "anios-noventa anios-noventa";
+    }
+
+    #anios-setenta,
+    #anios-ochenta,
+    #anios-noventa {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*----seccion-tienda----*/
+
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        margin: 50px auto;
+    }
+
+    /*----seccion-fotos----*/
+
+    .contenedor-fotos {
+        grid-template-columns: 1fr 1fr;
+        background-color: rgb(16, 16, 16);
+    }
+
+    /*----seccion-musica----*/
+
+    .contenedor-musica {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 30px auto;
+    }
+
+    .copyright>h4 {
+        font-size: 15px;
+    }
+
+    /*------------- CONTACTO----------------*/
+
+    form {
+        width: 60%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        width: 80%;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    .contenedor-logo {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .portada h1 {
+        font-size: 2.5rem;
+    }
+
+    .seccion-banner h2 {
+        font-size: 2.5rem;
+    }
+
+    .texto-banner {
+        margin: 0 0 50px 130px;
+    }
+
+    .seccion-banner a {
+        padding: 8px;
+        width: 12%;
+    }
+
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contenedor-fotos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #anios-setenta,
+    #anios-ochenta,
+    #anios-noventa {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #anios-setenta {
+        margin-top: 50px;
+    }
+
+    #anios-ochenta {
+        flex-direction: row-reverse;
+        margin-bottom: 50px;
+    }
+
+    #anios-noventa {
+        margin-bottom: 50px;
+    }
+
+    #contenedor-historia {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*------------- CONTACTO-------------------*/
+
+    form {
+        width: 40%;
+    }
+
+}
+

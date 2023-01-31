@@ -1,0 +1,30 @@
+
+#contenedor-tienda {
+    display: grid;
+    grid-template-areas:
+        "seccion-tarjetas";
+
+        #seccion-tarjetas {
+            grid-area: seccion-tarjetas;
+        }
+        
+}
+
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 80%;
+    margin: 30px auto;
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .tarjeta-producto img {
+            width: 100%;
+        }
+
+}
+ 
