@@ -16,9 +16,6 @@ html #header {
   background-color: #2b0836;
   width: 100%;
 }
-html .navbar {
-  padding: 0;
-}
 html .navbar-collapse {
   text-align: center;
 }
@@ -202,6 +199,22 @@ body #footer {
   grid-area: footer;
 }
 
+.navbar {
+  padding: 0;
+}
+
+.contenedor-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.logo {
+  width: 125px;
+  padding: 18px 0 8px;
+  margin-left: 25px;
+}
+
 /*-------portada--------*/
 .portada {
   position: relative;
@@ -220,18 +233,6 @@ body #footer {
   justify-content: center;
   align-items: center;
   margin-left: 10px;
-}
-
-.contenedor-logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-}
-
-.logo {
-  width: 125px;
-  padding: 18px 0 8px;
-  margin-left: 25px;
 }
 
 /*-------sección banner--------*/
@@ -387,6 +388,7 @@ body #footer {
   margin: 30px auto;
 }
 
+/*------ MEDIA QUERIES -------*/
 @media (min-width: 480px) {
   .portada h1 {
     margin-left: 0;
