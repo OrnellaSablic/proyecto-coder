@@ -9,7 +9,8 @@
     <meta name="description" content="Sitio de la banda Queen donde encontrarás el merchandising oficial, fotos inéditas y además podrás escuchar la música directo de Spotify">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./img/logo2.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo2.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Historia</title>
 </head>
@@ -45,7 +46,7 @@
     </header>
     <main id="contenedor-general">
         <section id="anios-setenta">
-            <div class="seccion-historia">
+            <div class="seccion-historia" data-aos="fade-up">
                 <div>
                     <h3>Los años 70's</h3>
                     <p>Queen se formó en 1971. En 1973 firmaron su primer contrato para grabar con EMI. Ese mismo año,
@@ -62,13 +63,13 @@
                         Killers.</p>
                 </div>
             </div>
-            <div class="historia-img-1">
+            <div class="historia-img-1" data-aos="fade-up">
                 <img src="../img/queen-15.webp" alt="imagen de la banda británica Queen en un concierto del año 1974"
                     width="100%">
             </div>
         </section>
         <section id="anios-ochenta">
-            <div class="seccion-historia" id="anios-ochenta">
+            <div class="seccion-historia" id="anios-ochenta" data-aos="fade-up">
                 <div>
                     <h3>Los años 80's</h3>
                     <p>En 1981 se fueron de gira por el Lejano Oriente, y fueron la primera agrupación en llevar a cabo
@@ -82,13 +83,13 @@
                         y el álbum entró a los charts británicos en el núm. 1</p>
                 </div>
             </div>
-            <div class="historia-img-2">
+            <div class="historia-img-2" data-aos="fade-up">
                 <img src="../img/queen-16.webp" alt="imagen de la banda británica Queen en un concierto del año 1982"
                     width="100%">
             </div>
         </section>
         <section id="anios-noventa">
-            <div class="seccion-historia" id="anios-noventa">
+            <div class="seccion-historia" id="anios-noventa" data-aos="fade-up">
                 <div>
                     <h3>Los años 90's</h3>
                     <p>Entre 1988 y 1991 Queen publicó otros tres álbumes más, The Miracle en 1989 y en 1991 Innuendo y
@@ -100,7 +101,7 @@
                         John en el escenario en Wembley, para rendir un sentido tributo a Freddie.</p>
                 </div>
             </div>
-            <div id="contenedor-img-3" class="historia-img-3">
+            <div id="contenedor-img-3" class="historia-img-3" data-aos="fade-up">
                 <img src="../img/queen-17.webp" alt="imagen de la banda británica Queen en un concierto del año 1989"
                     width="100%">
             </div>
@@ -123,12 +124,17 @@
                     src="../img/icono-tiktok.png" alt="ícono de la red social Tik-Tok"></a>
         </div>
         <div class="copyright">
-            <h4>Copyright 2022, All rights reserved — Privacy Policy</h4>
+            <h4>© 2023 | Todos los derechos reservados</h4>
+            <p>Diseño y desarrollo por Ornella Sablic</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>

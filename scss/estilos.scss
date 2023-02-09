@@ -104,6 +104,7 @@ body {
             justify-content: center;
             align-items: center;
             margin-left: 10px;
+            text-align: center;
         }
     }
 
@@ -164,15 +165,14 @@ body {
        
 }
 
-
 .tienda,
 .fotos,
-.musica>h2 {
+.musica {
     background-color: #2b0836;
     color: aliceblue;
     text-align: center;
-    padding: 18px;
-    font-size: 25px;
+    padding: 10px 18px;
+    font-size: 20px ;
 }
 
 
@@ -208,6 +208,14 @@ body {
     border-radius: 10px;
     margin-bottom: 15px;
 
+    .titulo-album {
+        margin-top: 18px;
+    }
+
+    .detalle-tarjeta {
+            padding: 0 10px;
+    }
+
     button {
         background-color: #6b3377;
         border: 2px solid rgb(113, 13, 126);
@@ -230,7 +238,7 @@ body {
 
 
 .tarjeta-producto .titulo-album .titulo-prenda {
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .contenedor-boton {
@@ -286,6 +294,17 @@ body {
     margin: 30px auto;
 }
 
+.copyright {
+    padding: 30px 0 0 0;
+
+    h4 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
 
 /*------ MEDIA QUERIES -------*/
 
@@ -320,6 +339,7 @@ body {
     .carrusel {
         flex-direction: row;
         justify-content: space-evenly;
+        gap: 15px;
     }
 
 
@@ -365,14 +385,12 @@ body {
         margin: 30px auto;
     }
 
-    .copyright>h4 {
-        font-size: 15px;
-    }
 
     /*------------- CONTACTO----------------*/
 
     form {
         width: 60%;
+        margin: 120px auto;
     }
 
 }
@@ -418,6 +436,11 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .tarjeta-producto {
+        width: 90%;
+        margin: 0 auto;
+     }
+    
     .contenedor-fotos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

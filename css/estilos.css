@@ -58,9 +58,10 @@ html footer .redes-sociales {
   padding-left: 36px;
 }
 html footer .copyright {
-  padding: 30px 0;
+  padding: 30px 0 0 0 h4;
+  padding-font-size: 12px;
 }
-html footer .copyright h4 {
+html footer .copyright p {
   font-size: 12px;
 }
 
@@ -127,7 +128,7 @@ form {
   flex-direction: column;
   background-color: #6b3377;
   width: 80%;
-  margin: 120px auto;
+  margin: 80px auto;
   padding: 30px;
   box-shadow: 6px 4px 29px -2px rgb(219, 216, 219);
 }
@@ -233,6 +234,7 @@ body #footer {
   justify-content: center;
   align-items: center;
   margin-left: 10px;
+  text-align: center;
 }
 
 /*-------sección banner--------*/
@@ -284,12 +286,12 @@ body #footer {
 
 .tienda,
 .fotos,
-.musica > h2 {
+.musica {
   background-color: #2b0836;
   color: aliceblue;
   text-align: center;
-  padding: 18px;
-  font-size: 25px;
+  padding: 10px 18px;
+  font-size: 20px;
 }
 
 .owl-container {
@@ -323,6 +325,12 @@ body #footer {
   border-radius: 10px;
   margin-bottom: 15px;
 }
+.tarjeta-producto .titulo-album {
+  margin-top: 18px;
+}
+.tarjeta-producto .detalle-tarjeta {
+  padding: 0 10px;
+}
 .tarjeta-producto button {
   background-color: #6b3377;
   border: 2px solid rgb(113, 13, 126);
@@ -341,7 +349,7 @@ body #footer {
 }
 
 .tarjeta-producto .titulo-album .titulo-prenda {
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .contenedor-boton {
@@ -388,6 +396,16 @@ body #footer {
   margin: 30px auto;
 }
 
+.copyright {
+  padding: 30px 0 0 0;
+}
+.copyright h4 {
+  font-size: 12px;
+}
+.copyright p {
+  font-size: 12px;
+}
+
 /*------ MEDIA QUERIES -------*/
 @media (min-width: 480px) {
   .portada h1 {
@@ -411,6 +429,7 @@ body #footer {
   .carrusel {
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 15px;
   }
   #contenedor-historia {
     grid-template-columns: repeat(2, 1fr);
@@ -418,8 +437,8 @@ body #footer {
     grid-template-areas: "anios-setenta anios-setenta" "anios-ochenta anios-ochenta" "anios-noventa anios-noventa";
   }
   #anios-setenta,
-#anios-ochenta,
-#anios-noventa {
+  #anios-ochenta,
+  #anios-noventa {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -443,12 +462,10 @@ body #footer {
     gap: 15px;
     margin: 30px auto;
   }
-  .copyright > h4 {
-    font-size: 15px;
-  }
   /*------------- CONTACTO----------------*/
   form {
     width: 60%;
+    margin: 120px auto;
   }
 }
 @media (min-width: 1024px) {
@@ -482,13 +499,17 @@ body #footer {
   .contenedor-tarjetas {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .tarjeta-producto {
+    width: 90%;
+    margin: 0 auto;
+  }
   .contenedor-fotos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   #anios-setenta,
-#anios-ochenta,
-#anios-noventa {
+  #anios-ochenta,
+  #anios-noventa {
     flex-direction: row;
     align-items: center;
   }

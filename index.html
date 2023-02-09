@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Queen, Freddie Mercury, Roger Taylor, John Deacon, Brian May, merchandising, discografía, fotos, musica, tienda, discografía">
-    <meta name="description" content="Sitio de la banda Queen donde encontrarás el merchandising oficial, fotos inéditas y además podrás escuchar la música directo de Spotify">
+    <meta name="keywords"
+        content="Queen, Freddie Mercury, Roger Taylor, John Deacon, Brian May, merchandising, discografía, fotos, musica, tienda, discografía">
+    <meta name="description"
+        content="Sitio de la banda Queen donde encontrarás el merchandising oficial, fotos inéditas y además podrás escuchar la música directo de Spotify">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../queen-site/vendor/owl.carousel.min.css">
+        <link rel="stylesheet" href="../queen-site/vendor/owl.theme.default.min.css">
     <link rel="shortcut icon" href="./img/logo2.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Inicio</title>
 </head>
-
 <body>
     <!-------------------- E N C A B E Z A D O --------------------------->
     <header id="header">
@@ -60,30 +62,36 @@
                 <article class="carrusel owl-carousel owl-theme">
                     <article class="tarjeta-producto item">
                         <img src="./img/queen-1.webp" alt="portada del primer disco de Queen">
-                        <p class="titulo-album"><strong>Álbum:</strong> Queen</p>
-                        <p class="titulo-album"><strong>Discográfica:</strong> EMI/Parlaphone(Europa)</p>
-                        <p><strong>Géneros:</strong> Hard Rock/ glam rock</p>
+                        <div class="detalle-tarjeta">
+                            <p class="titulo-album"><strong>Álbum:</strong> Queen</p>
+                            <p><strong>Discográfica:</strong> EMI/Parlaphone(Europa)</p>
+                            <p><strong>Géneros:</strong> Hard Rock/ glam rock</p>
+                        </div>
                         <button>Agregar al carrito</button>
                     </article>
+
                     <article class="item tarjeta-producto">
                         <img src="./img/queen-2.webp" alt="portada del segundo disco de Queen">
-                        <p class="titulo-album"><strong>Álbum:</strong> Queen II</p>
-                        <p><strong>Discográfica:</strong> EMI/Parlaphone(Europa)</p>
-                        <p><strong>Géneros:</strong> Hard Rock/ glam rock</p>
+                        <div class="detalle-tarjeta">
+                            <p class="titulo-album"><strong>Álbum:</strong> Queen II</p>
+                            <p><strong>Discográfica:</strong> EMI/Parlaphone(Europa)</p>
+                            <p><strong>Géneros:</strong> Hard Rock/ glam rock</p>
+                        </div>
                         <button type="submit">Agregar al carrito</button>
                     </article>
                     <article class="item tarjeta-producto">
                         <img src="./img/queen-3.webp" alt="portada del tercer disco de Queen">
-                        <p class="titulo-album"><strong>Álbum:</strong> Sheer Heart Attack</p>
-                        <p><strong>Discográfica:</strong> EMI/Parlaphone(Europa)</p>
-                        <p><strong>Géneros:</strong> Hard Rock/ glam rock</p>
+                        <div class="detalle-tarjeta">
+                            <p class="titulo-album"><strong>Álbum:</strong> Sheer Heart Attack</p>
+                            <p><strong>Discográfica:</strong> EMI/Parlaphone(Europa)</p>
+                            <p><strong>Géneros:</strong> Hard Rock/ glam rock</p>
+                        </div>
                         <button>Agregar al carrito</button>
                     </article>
                 </article>
                 <div class="contenedor-boton">
                     <a class="btn-tienda" href="./section/tienda.html">Ir a la tienda</a>
                 </div>
-
             </section>
 
         </section>
@@ -118,14 +126,15 @@
                     width="100%">
             </div>
             <div>
-                <img src="./img/queen-japon.jpg" alt="imagen de la banda británica Queen en una sesión fotográfica realizada durante la gira en Japón en el año 1975"
+                <img src="./img/queen-japon.jpg"
+                    alt="imagen de la banda británica Queen en una sesión fotográfica realizada durante la gira en Japón en el año 1975"
                     width="100%">
             </div>
             <div>
                 <img src="./img/queen-1977.webp" alt="imagen de la banda británica Queen del año 1977" width="100%">
             </div>
             <div>
-                <img src="./img/queen-1974.webp" alt="imagen de la banda británica Queen del año 1974" width="100%">
+                <img src="./img/queen-9.webp" alt="imagen de la banda británica Queen del año 1974" width="100%">
             </div>
         </article>
     </section>
@@ -142,7 +151,7 @@
         </div>
     </section>
     <section>
-        <!---------------------- SECCIÓN MÚSICA ---------------------->
+        <!---------------------- SECCIÓN MÚSICA (Spotify) ---------------------->
         <section id="seccion-musica">
             <div class="musica">
                 <h2>MÚSICA</h2>
@@ -185,8 +194,8 @@
                         width="100%" height="152" frameBorder="0" allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy"></iframe>
+                </div>
             </section>
-            </div>
         </section>
         <!----------------------- B A N N E R - 3 ---------------------->
         <section id="banner-3" class=seccion-banner>
@@ -196,8 +205,7 @@
             </div>
             <div class="texto-banner">
                 <h2>LOS 90'S</h2>
-                <a href="./section/historia.html#anios-noventa">Leer más<img src="./img/icono-flecha.png"
-                        alt="icono de una flecha"></a>
+                <a href="./section/historia.html#anios-noventa">Leer más<img src="./img/icono-flecha.png" alt="icono de una flecha"></a>
             </div>
         </section>
         <!----------------------- F O O T E R ---------------------->
@@ -216,12 +224,15 @@
                         src="./img/icono-tiktok.png" alt="ícono de la red social Tik-Tok"></a>
             </div>
             <div class="copyright">
-                <h4>© Copyright 2022, All rights reserved — Privacy Policy</h4>
+                <h4>© 2023 | Todos los derechos reservados</h4>
+                <p>Diseño y desarrollo por Ornella Sablic</p>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
+        <script src="../queen-site/vendor/jquery.min.js"></script>
+        <script src="../queen-site/vendor/owl.carousel.min.js"></script>
+        <script src="../queen-site/vendor/main.js"></script>
 </body>
-
 </html>
