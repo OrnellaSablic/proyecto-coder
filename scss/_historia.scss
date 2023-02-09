@@ -1,4 +1,3 @@
-
 #contenedor-general {
     display: grid;
     grid-template-areas:
@@ -6,36 +5,36 @@
         "anios-ochenta"
         "anios-noventa";
 
-        #anios-setenta {
-            grid-area: anios-setenta;
-            margin-top: 18px;
+    #anios-setenta {
+        grid-area: anios-setenta;
+        margin-top: 18px;
 
 
-            .historia-img-1{
-                padding: 0 30px 0;
-            }
-
+        .historia-img-1 {
+            padding: 0 30px 0;
         }
-        
-        #anios-ochenta {
-            grid-area: anios-ochenta;
 
-            .historia-img-2{
-                padding: 0 30px 0;
-            }
-            
+    }
+
+    #anios-ochenta {
+        grid-area: anios-ochenta;
+
+        .historia-img-2 {
+            padding: 0 30px 0;
         }
-        
-        #anios-noventa {
-            grid-area: anios-noventa;
+
+    }
+
+    #anios-noventa {
+        grid-area: anios-noventa;
 
 
-            .historia-img-3 {
-                padding: 0 30px 0;
-                margin-bottom: 30px;
-            }
-            
+        .historia-img-3 {
+            padding: 0 30px 0;
+            margin-bottom: 30px;
         }
+
+    }
 
     .seccion-historia {
         padding: 30px 20px 0;

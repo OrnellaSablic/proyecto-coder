@@ -1,13 +1,12 @@
-
 #contenedor-tienda {
     display: grid;
     grid-template-areas:
         "seccion-tarjetas";
 
-        #seccion-tarjetas {
-            grid-area: seccion-tarjetas;
-        }
-        
+    #seccion-tarjetas {
+        grid-area: seccion-tarjetas;
+    }
+
 }
 
 
@@ -18,13 +17,12 @@
     width: 80%;
     margin: 30px auto;
 
-        p {
-            margin-bottom: 15px;
-        }
+    p {
+        margin-bottom: 15px;
+    }
 
-        .tarjeta-producto img {
-            width: 100%;
-        }
+    .tarjeta-producto img {
+        width: 100%;
+    }
 
 }
- 
